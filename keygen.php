@@ -30,8 +30,8 @@ use Symfony\Component\Console\SingleCommandApplication;
         $exportablePubKey = sodium_bin2hex($publicKey->getRawKeyMaterial());
 
         if ($shouldWrite) {
-            KeyFactory::save($secretKey, 'app/key.secret');
-            file_put_contents('app/key.public', $exportablePubKey);
+            KeyFactory::save($secretKey, 'key.secret');
+            file_put_contents('key.public', $exportablePubKey);
         }
 
         $secKeyStr = KeyFactory::export($secretKey)->getString();
