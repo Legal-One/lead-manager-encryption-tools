@@ -1,0 +1,23 @@
+{
+    "name": "legalone/lead-manager-keygen",
+    "description": "A CLI tool for generation of pub/private keys for Legal One GmbH Lead Manager",
+    "type": "project",
+    "require": {
+        "php": ">= 7.4.0",
+        "ext-sodium": "*",
+        "paragonie/halite": "^4.6",
+        "symfony/console": "^5.1"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-master",
+        "phpunit/phpunit": "^9.3"
+    },
+    "license": "Legal One GmbH - All rights reserved.",
+    "authors": [
+        {
+            "name": "Legal One GmbH -",
+            "email": "dev@legal.one"
+        }
+    ],
+    "minimum-stability": "stable"
+}
